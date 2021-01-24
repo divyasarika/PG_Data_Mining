@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Product Name <= 2.5\ngini = 0.436\nsamples = 2002\nvalue = [1359, 643]\nclass = no"] ;
+1 [label="Product Name <= 0.5\ngini = 0.361\nsamples = 1626\nvalue = [1241, 385]\nclass = no"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Sales <= 45.25\ngini = 0.474\nsamples = 451\nvalue = [277, 174]\nclass = no"] ;
+1 -> 2 ;
+3 [label="gini = 0.445\nsamples = 350\nvalue = [233, 117]\nclass = no"] ;
+2 -> 3 ;
+4 [label="gini = 0.492\nsamples = 101\nvalue = [44, 57]\nclass = yes"] ;
+2 -> 4 ;
+5 [label="Product Name <= 1.5\ngini = 0.295\nsamples = 1175\nvalue = [964, 211]\nclass = no"] ;
+1 -> 5 ;
+6 [label="gini = 0.12\nsamples = 405\nvalue = [379, 26]\nclass = no"] ;
+5 -> 6 ;
+7 [label="Sales <= 32.5\ngini = 0.365\nsamples = 770\nvalue = [585, 185]\nclass = no"] ;
+5 -> 7 ;
+8 [label="gini = 0.261\nsamples = 343\nvalue = [290, 53]\nclass = no"] ;
+7 -> 8 ;
+9 [label="gini = 0.427\nsamples = 427\nvalue = [295, 132]\nclass = no"] ;
+7 -> 9 ;
+10 [label="gini = 0.431\nsamples = 376\nvalue = [118, 258]\nclass = yes"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
